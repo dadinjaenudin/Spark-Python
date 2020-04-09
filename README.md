@@ -3,7 +3,7 @@ This Scripts created when I was working on Oracle Big data Cloud to transform da
 # Spark Python, hdfs, Hive
 
 
-# Transfer local file  to Cloud
+### Transfer local file  to Cloud
 
 ```
 #!/bin/sh
@@ -59,7 +59,7 @@ echo "Finish upload to cloud  `date '+%Y-%m-%d %H:%M:%S'`   " >> $LOG_FILE
 ```
 
 
-# We can also query from Oracle to tranfer file into Cloud
+###  We can also query from Oracle to tranfer file into Cloud
 
 ```
 
@@ -104,7 +104,7 @@ echo "Finish upload fle ${DIR}/$FILENAME  `date '+%Y-%m-%d %H:%M:%S'`   " >> $LO
 ```
 
 
-# Hive Create Table
+###  Hive Create Table
 
 ```
     DROP TABLE fs_ymc_card;
@@ -171,7 +171,7 @@ echo "Finish upload fle ${DIR}/$FILENAME  `date '+%Y-%m-%d %H:%M:%S'`   " >> $LO
     
 ```
 
-# Spark Python to insert data to Hive
+###  Spark Python to insert data to Hive
 ```
 from pyspark import SparkContext, SparkConf
 from pyspark.sql import SparkSession, HiveContext
