@@ -1,0 +1,436 @@
+    '''
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/01
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/02
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/03
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/04
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/05
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/06
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/07
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/08
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/09
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/10
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/11
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2016/12
+
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/01
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/02
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/03
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/04
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/05
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/06
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/07
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/08
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/09
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/10
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/11
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2017/12
+
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/01
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/02
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/03
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/04
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/05
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/06
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/07
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/08
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/09
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/10
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/11
+    [hdfs@yogyabdcs-bdcsce-1 ~]$ hdfs dfs -mkdir /yogya-bigdata-prd/fact_sales_gold/2018/12
+
+    $ hdfs dfs -mv /yogya-bigdata-prd/fact_sales_gold/****2016.* /yogya-bigdata-prd/fact_sales_gold/2016
+    $ hdfs dfs -mv /yogya-bigdata-prd/fact_sales_gold/****2017.* /yogya-bigdata-prd/fact_sales_gold/2017
+    $ hdfs dfs -mv /yogya-bigdata-prd/fact_sales_gold/****2018.* /yogya-bigdata-prd/fact_sales_gold/2018
+
+
+    -- Create ORC Table
+    CREATE TABLE dim_system (
+        system    string
+    )
+     ROW FORMAT DELIMITED
+     FIELDS TERMINATED BY '\t'
+     STORED AS ORC tblproperties ("orc.compress"="ZLIB");
+
+    insert into dim_mkggroup values(1,'PUTUS');
+    insert into dim_mkggroup values(2,'KONSINYASI');
+
+    DROP TABLE fs_sales_gold;
+
+    CREATE EXTERNAL TABLE IF NOT EXISTS fs_sales_gold(
+    date_trn        string,
+    site            string,
+    store_code      string,
+    art_code        string,
+    art_desc        string,
+    subclass        string,
+    brand_code      string,
+    brand_desc      string,
+    princ_code      string,
+    princ_desc      string,
+    priv_label      string,
+    art_type        string,
+    sales           float,
+    cogs            float,
+    ppn             float,
+    qty             float
+    ) PARTITIONED BY (year string, month string)
+    ROW FORMAT DELIMITED
+     FIELDS TERMINATED BY '|'
+     STORED AS TEXTFILE
+     LOCATION '/yogya-bigdata-prd/fact_sales_gold'
+     tblproperties ("skip.header.line.count"="1");
+
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='01') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/01';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='02') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/02';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='03') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/03';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='04') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/04';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='05') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/05';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='06') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/06';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='07') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/07';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='08') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/08';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='09') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/09';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='10') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/10';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='11') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/11';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2016',month='12') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2016/12';
+
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='01') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/01';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='02') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/02';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='03') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/03';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='04') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/04';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='05') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/05';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='06') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/06';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='07') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/07';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='08') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/08';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='09') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/09';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='10') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/10';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='11') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/11';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2017',month='12') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2017/12';
+
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='01') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/01';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='02') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/02';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='03') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/03';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='04') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/04';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='05') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/05';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='06') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/06';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='07') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/07';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='08') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/08';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='09') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/09';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='10') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/10';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='11') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/11';
+    ALTER TABLE fs_sales_gold ADD PARTITION (year='2018',month='12') LOCATION '/yogya-bigdata-prd/fact_sales_gold/2018/12';
+
+    SHOW PARTITIONS fs_sales_gold;
+
+    DROP VIEW fact_sales_gold_bydate;
+    DROP TABLE fact_sales_gold_bydate_2016;
+    DROP TABLE fact_sales_gold_bydate_2017;
+    DROP TABLE fact_sales_gold_bydate_2018;
+    DROP VIEW fact_sales_gold_byMonth;
+    DROP TABLE fact_sales_gold_byMonth_2016;
+    DROP TABLE fact_sales_gold_byMonth_2017;
+    DROP TABLE fact_sales_gold_byMonth_2018;
+    DROP VIEW fact_sales_gold_byYear;
+    DROP TABLE fact_sales_gold_byYear_2016;
+    DROP TABLE fact_sales_gold_byYear_2017;
+    DROP TABLE fact_sales_gold_byYear_2018;
+
+    --CREATE TABLE fact_sales_gold_bydate_2016 (
+    --CREATE TABLE fact_sales_gold_bydate_2017 (
+    CREATE TABLE fact_sales_gold_bydate_2018 (
+        store_code      string,
+        date_trn        string,
+        Directorate     string,
+        division        string,
+        category        string,
+        sub_category    string,
+        class           string,
+        brand           string,
+        art_type        string,
+        princ_code      string,
+        sales	        float,
+        cogs	        float,
+        ppn	            float,
+        qty             float,
+        sales_tl	    float,
+        cogs_tl	        float,
+        ppn_tl	        float,
+        qty_tl          float
+    )
+    PARTITIONED BY (year string, month string)
+    CLUSTERED BY(date_trn) INTO 10 BUCKETS
+    STORED AS ORC TBLPROPERTIES ('orc.compress'='ZLIB', 'transactional'='true');
+
+    CREATE VIEW fact_sales_gold_bydate
+    PARTITIONED ON (year,month)
+    AS
+    SELECT
+             store_code
+            ,date_trn
+            ,Directorate
+            ,division
+            ,category
+            ,sub_category
+            ,class
+            ,brand
+            ,art_type
+            ,princ_code
+            ,sales
+            ,cogs
+            ,ppn
+            ,qty
+            ,sales_tl
+            ,cogs_tl
+            ,ppn_tl
+            ,qty_tl
+            ,concat(year,month) month_trn
+            ,year
+            ,month
+       FROM fact_sales_gold_bydate_2016
+    UNION ALL
+    SELECT
+             store_code
+            ,date_trn
+            ,Directorate
+            ,division
+            ,category
+            ,sub_category
+            ,class
+            ,brand
+            ,art_type
+            ,princ_code
+            ,sales
+            ,cogs
+            ,ppn
+            ,qty
+            ,sales_tl
+            ,cogs_tl
+            ,ppn_tl
+            ,qty_tl
+            ,concat(year,month) month_trn
+            ,year
+            ,month
+       FROM fact_sales_gold_bydate_2017
+    UNION ALL
+    SELECT
+             store_code
+            ,date_trn
+            ,Directorate
+            ,division
+            ,category
+            ,sub_category
+            ,class
+            ,brand
+            ,art_type
+            ,princ_code
+            ,sales
+            ,cogs
+            ,ppn
+            ,qty
+            ,sales_tl
+            ,cogs_tl
+            ,ppn_tl
+            ,qty_tl
+            ,concat(year,month) month_trn
+            ,year
+            ,month
+       FROM fact_sales_gold_bydate_2018;
+
+
+    --CREATE TABLE fact_sales_gold_byMonth_2016 (
+    --CREATE TABLE fact_sales_gold_byMonth_2017 (
+    CREATE TABLE fact_sales_gold_byMonth_2018 (
+        store_code      string,
+        month_trn       string,
+        Directorate     string,
+        division        string,
+        category        string,
+        sub_category    string,
+        class           string,
+        brand           string,
+        art_type        string,
+        princ_code      string,
+        sales	        float,
+        cogs	        float,
+        ppn	            float,
+        qty             float,
+        sales_tl	    float,
+        cogs_tl	        float,
+        ppn_tl	        float,
+        qty_tl          float
+    )
+    PARTITIONED BY (year string, month string)
+    CLUSTERED BY(store_code) INTO 3 BUCKETS
+    STORED AS ORC TBLPROPERTIES ('orc.compress'='ZLIB', 'transactional'='true');
+
+    CREATE VIEW fact_sales_gold_bymonth
+    PARTITIONED ON (year,month)
+    AS
+    SELECT
+             store_code
+            ,month_trn
+            ,Directorate
+            ,division
+            ,category
+            ,sub_category
+            ,class
+            ,brand
+            ,art_type
+            ,princ_code
+            ,sales
+            ,cogs
+            ,ppn
+            ,qty
+            ,sales_tl
+            ,cogs_tl
+            ,ppn_tl
+            ,qty_tl
+            ,year
+            ,month
+       FROM fact_sales_gold_bymonth_2016
+    UNION ALL
+    SELECT
+             store_code
+            ,month_trn
+            ,Directorate
+            ,division
+            ,category
+            ,sub_category
+            ,class
+            ,brand
+            ,art_type
+            ,princ_code
+            ,sales
+            ,cogs
+            ,ppn
+            ,qty
+            ,sales_tl
+            ,cogs_tl
+            ,ppn_tl
+            ,qty_tl
+            ,year
+            ,month
+       FROM fact_sales_gold_bymonth_2017
+    UNION ALL
+    SELECT
+             store_code
+            ,month_trn
+            ,Directorate
+            ,division
+            ,category
+            ,sub_category
+            ,class
+            ,brand
+            ,art_type
+            ,princ_code
+            ,sales
+            ,cogs
+            ,ppn
+            ,qty
+            ,sales_tl
+            ,cogs_tl
+            ,ppn_tl
+            ,qty_tl
+            ,year
+            ,month
+       FROM fact_sales_gold_bymonth_2018
+
+
+    --CREATE TABLE fact_sales_gold_byYear_2016 (
+    --CREATE TABLE fact_sales_gold_byYear_2017 (
+    CREATE TABLE fact_sales_gold_byYear_2018 (
+        store_code      string,
+        year_trn        string,
+        Directorate     string,
+        division        string,
+        category        string,
+        sub_category    string,
+        class           string,
+        brand           string,
+        art_type        string,
+        princ_code      string,
+        sales	        float,
+        cogs	        float,
+        ppn	            float,
+        qty             float,
+        sales_tl	    float,
+        cogs_tl	        float,
+        ppn_tl	        float,
+        qty_tl          float
+    )
+    PARTITIONED BY (year string)
+    CLUSTERED BY(store_code) INTO 3 BUCKETS
+    STORED AS ORC TBLPROPERTIES ('orc.compress'='ZLIB', 'transactional'='true');
+
+
+    CREATE VIEW fact_sales_gold_byyear
+    PARTITIONED ON (year)
+    AS
+    SELECT
+            store_code
+            ,year_trn
+            ,Directorate
+            ,division
+            ,category
+            ,sub_category
+            ,class
+            ,brand
+            ,art_type
+            ,princ_code
+            ,sales
+            ,cogs
+            ,ppn
+            ,qty
+            ,sales_tl
+            ,cogs_tl
+            ,ppn_tl
+            ,qty_tl
+            ,year
+       FROM fact_sales_gold_byyear_2016
+    UNION ALL
+    SELECT
+            store_code
+            ,year_trn
+            ,Directorate
+            ,division
+            ,category
+            ,sub_category
+            ,class
+            ,brand
+            ,art_type
+            ,princ_code
+            ,sales
+            ,cogs
+            ,ppn
+            ,qty
+            ,sales_tl
+            ,cogs_tl
+            ,ppn_tl
+            ,qty_tl
+            ,year
+       FROM fact_sales_gold_byyear_2017
+    UNION ALL
+    SELECT
+            store_code
+            ,year_trn
+            ,Directorate
+            ,division
+            ,category
+            ,sub_category
+            ,class
+            ,brand
+            ,art_type
+            ,princ_code
+            ,sales
+            ,cogs
+            ,ppn
+            ,qty
+            ,sales_tl
+            ,cogs_tl
+            ,ppn_tl
+            ,qty_tl
+            ,year
+       FROM fact_sales_gold_byyear_2018
+
